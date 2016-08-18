@@ -101,21 +101,20 @@
                 Distance:<br>
                 <input type="text" name="distance">
                 <br><br>
-
-                <div class="dropdown open">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Day
-  </button>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Weekday</a> <br>
-    <a class="dropdown-item" href="#">Weekend</a> <br>
-  </div>
-
-
-
-
-</div>
+                <div class="form-group">
+     <label for="sel1">Day:</label>
+     <select class="form-control" id="sel1">
+       <option>Select</option>
+       <option>Weekday</option>
+       <option>Weekend</option>
+     </select>
+                  <div class="form-group">
+     <label for="sel1">Traffic:</label>
+     <select class="form-control" id="sel1">
+       <option>Select</option>
+       <option>Regular</option>
+       <option>Rush hour</option>
+     </select>
                 <br><br><br><br><input type="submit" value="Calculate">
               </form>
             </div>
