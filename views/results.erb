@@ -74,7 +74,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">NYC RIDE</h1>
+                        <h1 class="brand-heading"></h1>
                         <p class="intro-text">
                             <br></p>
                         <a href="#calculator" class="btn btn-circle page-scroll">
@@ -90,33 +90,10 @@
     <section id="calculator" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2> Calculator </h2>
-                <p>Please go to<a href="https://www.waze.com/livemap"> Waze.com </a> for time and distance of your route, enter that below</p>
-                <p></p>
-                <p></p>
-              <form method="post" action="/calculate">
-                Time:<br>
-                <input type="text" name="time">
-                <br>
-                Distance:<br>
-                <input type="text" name="distance">
-                <br><br>
-                <div class="form-group">
-     <label for="sel1">Select Day:</label>
-     <select name = "day" class="form-control" id="sel1">
-       <option value="weekday">Weekday</option>
-       <option value="weekend">Weekend</option>
-     </select>
-                </div>
-                  <div class="form-group">
-     <label for="sel1">Select Traffic:</label>
-     <select name = "traffic" class="form-control" id="sel1">
-       <option value= "regular">Regular</option>
-       <option value= "rush-hour">Rush hour</option>
-     </select>
-                </div>
-                <br><br><br><br><input type="submit" value="Calculate">
-              </form>
+                <h2> Calculator </h2><br>
+              <h1><%=@via_fare%></h1>
+              <h1><%=@taxi_fare%></h1>
+
             </div>
         </div>
     </section>
@@ -157,13 +134,15 @@
     <td>$50</td>
   </tr>
 </table>
+</center>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Developers info</h2>
-                <p>Made by Alexander Benjamin, Franklin Salazar and Kayla<p>
+                <p>Made by Alexander Benjamin, Franklin Salazar, Kayla<p>
                 <p>Feel free to email us to provide any type of feedback</p>
                 <p><a href="mailto:nycride@gmail.com">nycride@gmail.com</a>
                 </p>
