@@ -20,7 +20,7 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="../css/grayscale.min.css" rel="stylesheet">
+    <link href="../css/grayscale.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -94,6 +94,30 @@
                 <p>Please go to<a href="https://www.waze.com/livemap"> Waze.com </a> for time and distance of your route, enter that below</p>
                 <p></p>
                 <p></p>
+              <form>
+                Time:<br>
+                <input type="text" name="time">
+                <br>
+                Distance:<br>
+                <input type="text" name="distance">
+                <br><br>
+
+                <div class="dropdown open">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Day
+  </button>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Weekday</a> <br>
+    <a class="dropdown-item" href="#">Weekend</a> <br>
+  </div>
+
+
+
+
+</div>
+                <br><br><br><br><input type="submit" value="Calculate">
+              </form>
             </div>
         </div>
     </section>
@@ -105,7 +129,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Different Taxi Services in NYC</h2>
                     <p></p>
-                    
+
                 </div>
             </div>
         </div>
@@ -118,11 +142,11 @@
     <td>UberX</td>
     <td>Least expensive service from Uber. Allows 4 passengers. Most likely to get cars like Toyota Prius, Honda Accord. </td>
   </tr>
-  
+
   <tr>
     <td>UberXL</td>
     <td align="right"><span style="display: inline;">Has a higher fare price than UberX. Allows 6 passengers. Includes cars like SUVs and Mini Vans.</span>
-     
+
 </td>
   </tr>
   <tr>
@@ -134,7 +158,7 @@
     <td>$50</td>
   </tr>
 </table>
-</center> 
+</center>
     </section>
 
     <!-- Contact Section -->
@@ -152,7 +176,7 @@
                     <li>
                         <a href="https://github.com/franklin97/final-project" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
