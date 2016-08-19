@@ -28,22 +28,25 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<!----Tables-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> <span class="light">NYC</span> Ride
-                </a>
-            </div>
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+       <div class="container">
+           <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                   Menu <i class="fa fa-bars"></i>
+               </button>
+               <a class="navbar-brand page-scroll" href="#page-top">
+                   <i class="fa fa-play-circle"></i> <span class="light">NYC</span> Ride
+               </a>
+           </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -87,23 +90,23 @@
     </header>
 
     <!-- Calculator Section -->
-    <section id="calculator" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h1> Calculator Prices </h1><br>
-              <h2><%=@via_fare%></h2>
-              <h2><%=@taxi_fare%></h2>
-              <h2><%=@uberX_fare%></h2>
-              <h2><%=@uberXL_fare%></h2>
-              <h2><%=@uberBlack_fare%></h2>
-              <h2><%=@uberSUV_fare%></h2>
-              <h2><%=@lyft_standard%></h2>
-              <h2><%=@lyft_plus%></h2>
-              <h2><%=@lyft_premier%></h2>
-              <h2><%=@lyft_line%></h2>
-            </div>
-        </div>
-    </section>
+<section id="calculator" class="container content-section text-center">
+       <div class="row">
+           <div class="col-lg-8 col-lg-offset-2">
+               <h1> Calculator Prices </h1><br>
+             <h2><%=@via_fare%></h2>
+             <h2><%=@taxi_fare%></h2>
+             <h2><%=@uberX_fare%></h2>
+             <h2><%=@uberXL_fare%></h2>
+             <h2><%=@uberBlack_fare%></h2>
+             <h2><%=@uberSUV_fare%></h2>
+             <h2><%=@lyft_standard%></h2>
+             <h2><%=@lyft_plus%></h2>
+             <h2><%=@lyft_premier%></h2>
+             <h2><%=@lyft_line%></h2>
+           </div>
+       </div>
+   </section>
 
     <!-- services Section -->
     <section id="services" class="content-section text-center">
@@ -112,51 +115,113 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Different Taxi Services in NYC</h2>
                     <p></p>
-
                 </div>
             </div>
         </div>
-    <table align="right"style="width:80%">
-  <tr>
-    <th>Type of Uber</th>
-    <!--<th align="left">Savings</th>-->
-  </tr>
-  <tr>
-    <td>UberX</td>
-    <td>Least expensive service from Uber. Allows 4 passengers. Most likely to get cars like Toyota Prius, Honda Accord. </td>
-  </tr>
+   <div class="container">
+     <h2>Uber Services</h2>
 
-  <tr>
-    <td>UberXL</td>
-    <td align="right"><span style="display: inline;">Has a higher fare price than UberX. Allows 6 passengers. Includes cars like SUVs and Mini Vans.</span>
+
+<table class="table">
+
+   <tbody>
+     <tr>
+       <td>Uber X</td>
+       <td>Least expensive service from Uber. Allows 4 passengers.</td>
+
+     </tr>
+     <tr>
+       <td>Uber XL</td>
+       <td>Has a higher fare price than UberX. Allows 6 passengers. Includes cars like SUVs and Mini Vans.</td>
+
+     </tr>
+     <tr>
+       <td>Uber SUV</td>
+       <td>More luxurious and expensive than UberX and UberXL. Similar to Uber Black but with larger cars </td>
+     </tr>
+     <tr>
+       <td>Uber Black</td>
+       <td>Executive service. Highest fare price.</td>
+
+    </tr>
+   </tbody>
+ </table>
+</div>
+<div class="container">
+ <h2>
+Lyft Services</h2>
+ <table class="table">
+   <thead>
+     <tr>
+       <th></th>
+
+
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td>Lyft Standard</td>
+       <td>Lowest price. Allows 4 passengers.</td>
+
+     </tr>
+     <tr>
+       <td>Lyft Plus</td>
+       <td>More pricey than Lyft. Allows 6 or more passengers.</td>
+
+     </tr>
+     <tr>
+       <td>Lyft Premier</td>
+       <td>Luxury sedan. Allows 4 passengers.</td>
+
+     </tr>
+     <tr>
+       <td>Lyft Line</td>
+       <td>This service allows you to share a ride with someone who is going along the same route.</td>
+       </tr>
+   </tbody>
+ </table>
+ <div class="container">
+ <h2>VIA Service</h2>
+
+ <table class="table">
+
+   <tbody>
+     <tr>
+    <td>Car pooling service, each ride is $5 plus tax on weekdays, a very cheap option however you may have to take more stops for other via passengers and you’ll have to share the ride with them.
+</td>
+  </tr>
+  </tbody>
+ </table>
+</div>
+
+<div class="container">
+ <h2>NYC Taxi</h2>
+
+ <table class="table">
+
+   <tbody>
+     <tr>
+    <td>The classic yellow cab, passenger amount may vary, no app to call them, you have to find a cab.
 
 </td>
   </tr>
-  <tr>
-    <td>Uber Select</td>
-    <td>$50</td>
-  </tr>
-  <tr>
-    <td>Uber Black</td>
-    <td>$50</td>
-  </tr>
-</table>
-    </section>
+     </tbody>
+ </table>
+</div>
+</div>
 
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Developers info</h2>
-                <p>Made by Alexander Benjamin, Franklin Salazar, Kayla Davila<p>
+                <p>Made by Alexander Benjamin, Franklin Salazar and Kayla Davila<p>
                 <p>Feel free to email us to provide any type of feedback</p>
-                <p><a href="mailto:nycride@gmail.com">nycride@gmail.com</a></p>
+                <p><a href="mailto:nycride@gmail.com">nycride@gmail.com</a>
+                </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/franklin97/final-project" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        <a href="https://github.com/bengo1023/final-project" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
 
                 </ul>
@@ -165,12 +230,12 @@
     </section>
 
     <!-- Map Section -->
-    <div id="map"></div>
+<!--     <div id="map"></div> -->
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy;Developed by anonymous coders</p>
+            <p>Copyright &copy;Developed by Anonymous Coders</p>
         </div>
     </footer>
 
@@ -186,6 +251,7 @@
     <!-- Theme JavaScript -->
     <script src="../js/grayscale.min.js"></script>
 
-</body>
 
+
+</body>
 </html>
